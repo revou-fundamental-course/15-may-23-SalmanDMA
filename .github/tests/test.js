@@ -2,7 +2,11 @@ const https = require('https');
 const cheerio = require('cheerio');
 const requiredElements = require('./testData');
 
+<<<<<<< HEAD
 const url = `https://${process.env.GITHUB_ACTOR}.github.io/15-may-23-${process.env.GITHUB_ACTOR}`;
+=======
+const url = `https://${process.env.GITHUB_ACTOR}.github.io`;
+>>>>>>> main
 
 
 function testElements($) {

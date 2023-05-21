@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Matematik</title>
+  <link rel="stylesheet" href="./style.css" />
+ </head>
+ <body>
+  <header class="header">
+   <h1 class="header-title">
+    <span class="header-title-text">Katik</span>
+    Kalkulator Matematik
+   </h1>
+  </header>
+
+  <main class="container">
+   <section class="content">
+    <h2 class="content-title">Welcome to Katik</h2>
+    <p class="content-subtitle">Hai Sobat, Selamat datang di Katik 😊</p>
+    <p class="content-text">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    <p class="content-persegi">Persegi</p>
+   </section>
+
+   <section class="calculator">
+    <div class="calculator-item">
+     <div class="calculator-header">
+      <h2 class="calculator-title">Luas Persegi</h2>
+     </div>
+
+     <div class="calculator-content">
+      <div class="square-model">
+       <div class="square">
+        <div class="corner top-left">A</div>
+        <div class="corner top-right">B</div>
+        <div class="corner bottom-left">D</div>
+        <div class="corner bottom-right">C</div>
+       </div>
+       <p class="square-text">Bujur Sangkar</p>
+      </div>
+      <p class="calculator-formula-text">Rumus Luas Persegi yaitu :</p>
+      <p class="calculator-formula">L = S * S</p>
+      <div class="calculator-formula-description">
+       <p>Di mana :</p>
+       <p>L = Luas</p>
+       <p>S = Sisi</p>
+      </div>
+     </div>
+
+     <form class="form" novalidate>
+      <h3 class="form-title">Hitung Luas Persegi</h3>
+      <input id="sisi-luas" class="form-input" type="text" placeholder="Nilai Sisi" required />
+      <span id="sisi-luas-error" class="form-input-error">Error</span>
+      <div id="output-luas" class="result"></div>
+      <button id="hitung-luas" class="form-button button-hitung" type="submit">Hitung</button>
+      <button class="form-button button-reset" type="reset">Reset</button>
+     </form>
+    </div>
+
+    <div class="calculator-item">
+     <div class="calculator-header">
+      <h2 class="calculator-title">Keliling Persegi</h2>
+     </div>
+
+     <div class="calculator-content">
+      <div class="square-model">
+       <div class="square">
+        <div class="corner top-left">A</div>
+        <div class="corner top-right">B</div>
+        <div class="corner bottom-left">D</div>
+        <div class="corner bottom-right">C</div>
+       </div>
+       <p class="square-text">Bujur Sangkar</p>
+      </div>
+      <p class="calculator-formula-text">Rumus Keliling Persegi yaitu :</p>
+      <p class="calculator-formula">K = 4 * S</p>
+      <div class="calculator-formula-description">
+       <p>Di mana :</p>
+       <p>K = Keliling</p>
+       <p>S = Sisi</p>
+      </div>
+     </div>
+
+     <form class="form" novalidate>
+      <h3 class="form-title">Hitung Keliling Persegi</h3>
+      <input id="sisi-keliling" class="form-input" type="text" placeholder="Nilai Sisi" required />
+      <span id="sisi-keliling-error" class="form-input-error">Error</span>
+      <div id="output-keliling" class="result"></div>
+      <button id="hitung-keliling" class="form-button button-hitung" type="submit">Hitung</button>
+      <button class="form-button button-reset" type="reset">Reset</button>
+     </form>
+    </div>
+   </section>
+  </main>
+
+  <footer class="footer">
+   <p class="footer-text">Made with ❤ by <a href="https://github.com/SalmanDMA" target="_blank"> Salman Dwi Maulana Akbar</a></p>
+  </footer>
+
+  <script src="./script.js" type="module"></script>
+ </body>
+</html>
