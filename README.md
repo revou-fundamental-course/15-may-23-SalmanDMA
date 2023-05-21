@@ -22,6 +22,6 @@
 
 4. **Github Pages**
 
-   [Tautan ke proyek (klik disini)](https://salmandma.github.io/kalkulator-tematik)
+   [Tautan ke proyek (klik disini)](https://revou-fundamental-course.github.io/15-may-23-SalmanDMA/)
 
 Selamat melihat dan bersenang-senang !
