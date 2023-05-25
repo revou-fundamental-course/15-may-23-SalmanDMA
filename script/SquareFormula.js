@@ -43,10 +43,17 @@ function SquareFormula(type) {
  resultAll.classList.add('result-all');
  resultAll.textContent = `${type.toUpperCase()} = ${calculation(inputValue)}`;
 
- // kemudian di gabungkan ke output element
- outputElement.append(resultText, resultValue, resultAll);
- outputElement.classList.add('result-active');
+ const resultContainer = document.createElement('div');
+ resultContainer.append(resultText, resultValue, resultAll);
+
+ if (outputElement.childNodes.length > 0) {
+  outputElement.replaceChild(resultContainer, outputElement.childNodes[0]);
+ } else {
+  outputElement.append(resultContainer);
+  outputElement.classList.add('result-active');
+ }
 }
+// kemudian di gabungkan ke output element
 
 // kemudian saya kirim untuk dapat digunakan oleh file lain
 export default SquareFormula;

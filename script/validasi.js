@@ -16,13 +16,11 @@ function initializeFormValidation(config) {
    // yang di mana ketika di submit akan menghilangkan aksi defaultnya form
    event.preventDefault();
 
-   // kemudian deklarasikan sebuah input number untuk mendapatkan value dari input yang ada di dalamnya
-   const inputNumber = parseFloat(input.value);
    // kemudian deklarasikan juga sebuah error message untuk menampilkan sebuah kesalan jika user salah menginput yang di mana di dapat kan sebuah kondisi jika panjang lebih dari 0 maka  harus berupa angka, dan jika panjang kurang dari 0 maka input tidak boleh kosong dan harus berupa angka
    const errorMessage = input.value.length > 0 ? 'Input harus berupa angka' : 'Input tidak boleh kosong & harus berupa angka';
 
    // jika inputNumber tidak merupakan angka maka akan menampilkan errorMessage dan button akan tidak aktif
-   if (isNaN(inputNumber)) {
+   if (isNaN(input.value) || input.value.length == 0) {
     // memanggil fungsi showError
     showError(form, errorMessage);
     // memanggil fungsi deactivateButton
@@ -39,10 +37,9 @@ function initializeFormValidation(config) {
   // disini input memilik sebuah event bernama input
   //  dan untuk isinya tidak jauh beda dengan form yang mempunyai event submit
   input.addEventListener('input', function () {
-   const inputNumber = parseFloat(input.value);
    const errorMessage = input.value.length > 0 ? 'Input harus berupa angka' : 'Input tidak boleh kosong & harus berupa angka';
 
-   if (isNaN(inputNumber)) {
+   if (isNaN(input.value) || input.value.length == 0) {
     showError(form, errorMessage);
     deactivateButton(submitButton);
    } else {
